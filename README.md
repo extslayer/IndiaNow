@@ -8,7 +8,9 @@ Features
 	•	Displays news articles with a title, description, image, source, and URL link.
 	•	Handles API errors gracefully by showing fallback messages.
 	•	Removes unwanted characters and gibberish from article titles and descriptions.
+	•	Uses the MVVM (Model-View-ViewModel) architecture for clean separation of concerns and easy-to-maintain code.
 	•	Refresh functionality to reload news data.
+
 
 Screenshots
 
@@ -29,6 +31,7 @@ Usage
 
 Code Overview
 
+	•	Architecture: The app follows the MVVM (Model-View-ViewModel) architecture. This design pattern separates the app logic into three key components:
 	•	NewsAPI.swift: The core API client that fetches news data from the MediaStack API using URLSession.
 	•	NewsData.swift: The Codable struct representing each news article. It includes methods to sanitize titles and descriptions.
 	•	Error Handling: The app gracefully handles errors like network failures or malformed data, displaying appropriate messages to users.
